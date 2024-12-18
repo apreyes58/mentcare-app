@@ -100,7 +100,8 @@ try:
             submit_button = driver.find_element(By.XPATH, "//form[@incomptherapistsurveyid]//input[@type='submit']")
             actions = ActionChains(driver)
             actions.move_to_element(submit_button).click().perform()
-            # actions.moveToElement(element).click().perform();
+            
+            #actions.moveToElement(element).click().perform();
             #submit_button.click()
             print("Survey submitted successfully. Exiting program.")
             break
